@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Nagar Connect Notification</title>
+</head>
+
+<body style="font-family: Arial; background:#f5f5f5; padding:20px;">
+    <div style="background:#ffffff; padding:20px; border-radius:8px;">
+        <h2>Hello <%= userName %>,</h2>
+
+        <p>
+            <%= message %>
+        </p>
+
+        <% if (issueTitle) { %>
+            <p><strong>Issue:</strong>
+                <%= issueTitle %>
+            </p>
+            <% } %>
+
+                <% if (category) { %>
+                    <p><strong>Category:</strong>
+                        <%= category %>
+                    </p>
+                    <% } %>
+
+                        <% if (status) { %>
+                            <p><strong>Status:</strong>
+                                <%= status %>
+                            </p>
+                            <% } %>
+
+                                <% if (priority) { %>
+                                    <p><strong>Priority:</strong>
+                                        <%= priority %>
+                                    </p>
+                                    <% } %>
+
+                                        <p>Thank you,<br />Nagar Connect</p>
+    </div>
+</body>
+
+</html>
